@@ -62,7 +62,7 @@ const News = (props) => {
               {
                 articles.map((element) => {
                   return (
-                    <div className="flex justify-center items-start my-2" key={element.url}>
+                    <div className="flex justify-center items-start my-4" key={element.url}>
                       <Newsitem classtitle={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} publishedAt={element.publishedAt} source={element.source.name} />
                     </div>
                   )
