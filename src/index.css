@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out; /* You can adjust the transition duration */
+}
+
+.visible-down {
+    transform: translateY(10);
+    transition: transform 0.3s ease-in-out;
+}
