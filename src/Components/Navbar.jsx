@@ -16,6 +16,7 @@ const Navbar = () => {
 
   const handleOptionClick = () => {
     setToggle(false)
+    setRotate(false)
   }
 
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
           <div className="pr-5">
             <ul className='flex justify-center items-center flex-row gap-5 list-none max-md:hidden'>
               <li>
-                <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/general" onClick={handleOptionClick}>Home</Link>
+                <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/general">Home</Link>
               </li>
               {/* <li>
                 <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer' aria-current="page" to="/buisness">Buisness</Link>
@@ -59,25 +60,25 @@ const Navbar = () => {
             <div className="max-md:w-[100%]">
               <ul className='hidden max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-5 max-md:list-none max-md:text-center'>
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/general">Home</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/general" onClick={handleOptionClick}>Home</Link>
                 </li>
                 {/* <li>
                 <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/buisness">Buisness</Link>
               </li> */}
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/entertainment">Entertainment</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/entertainment" onClick={handleOptionClick}>Entertainment</Link>
                 </li>
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/health">Health</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/health" onClick={handleOptionClick}>Health</Link>
                 </li>
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/science">Science</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/science" onClick={handleOptionClick}>Science</Link>
                 </li>
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/sports">Sports</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/sports" onClick={handleOptionClick}>Sports</Link>
                 </li>
                 <li>
-                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/technology">Technology</Link>
+                  <Link className='text-[#ffffffa4] hover:text-white hover:cursor-pointer focus:text-white focus:border-2 focus:border-[#a0a0a0] focus:rounded-full focus:p-2' aria-current="page" to="/technology" onClick={handleOptionClick}>Technology</Link>
                 </li>
               </ul>
             </div>

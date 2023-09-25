@@ -11,7 +11,7 @@ const NewsItem = (props) => {
                     <span className="bg-[#ec2525] flex justify-center items-center w-max text-white rounded-md px-2 h-[1.3rem]">{source}</span>
                     <p className="text-base text-white">{description}</p>
                     <p className="font-semibold text-white"><small>By {author ? author : "Unknown"} on {new Date(publishedAt).toDateString()}</small></p>
-                    <a href={newsUrl} className="bg-[#0e171e] text-white flex justify-center items-center w-max rounded-md px-2 h-[1.7rem] self-center border-[0.01rem] border-[#3e3e3e] hover:bg-white hover:text-[#0e171e]">Read More ...</a>
+                    <a href={newsUrl} target='_blank' className="bg-[#0e171e] text-white flex justify-center items-center w-max rounded-md px-2 h-[1.7rem] self-center border-[0.01rem] border-[#3e3e3e] hover:bg-white hover:text-[#0e171e]">Read More ...</a>
                 </div>
             </div>
         </>
