@@ -8,14 +8,14 @@ import backgroundImage from './assets/News_background.jpg';
 const App = () => {
   const pageSize = 9;
   // const apiKey = process.env.REACT_APP_MY_API_KEY;
-  const apiKey = "390a2960a3f24c5ea7354cbfdbd54d66"
+  const apiKey = "303868f091db4eae8e96e2f3a562db5d"
   const [progress, updateProgress] = useState(0)
 
   return (
     <div className="bg-fixed bg-cover bg-no-repeat h-fit" style={{ backgroundImage: `url(${backgroundImage})`}}>
         <Router>
         <Navbar className="sticky top-0 z-50"/>
-        <LoadingBar color='#f11946' progress={progress} />
+        <LoadingBar color='#ffffff' progress={progress} />
         <Routes>
           <Route exact path='/' element={<News apiKey={apiKey} updateProgress={updateProgress} key="general" pageSize={pageSize} country="in" category="general" />}></Route>
           <Route exact path='/general' element={<News apiKey={apiKey} updateProgress={updateProgress} key="general" pageSize={pageSize} country="in" category="general" />}></Route>
