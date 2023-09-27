@@ -15,7 +15,7 @@ const Navbar = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth', // Smooth scrolling animation
-    });
+    });     
   }
 
   const handleOptionClick = () => {
