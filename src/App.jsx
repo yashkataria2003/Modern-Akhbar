@@ -1,3 +1,4 @@
+import process from 'process'
 import React, {useState} from 'react'
 import Navbar from './Components/Navbar';
 import News from './Components/News';
@@ -7,8 +8,11 @@ import backgroundImage from './assets/News_background.jpg';
 
 const App = () => {
   const pageSize = 9;
-  // const apiKey = process.env.REACT_APP_MY_API_KEY;
-  const apiKey = "303868f091db4eae8e96e2f3a562db5d"
+
+  const apiKey = import.meta.env.VITE_MY_API_KEY;
+  console.log(apiKey)
+  // const apiKey = "303868f091db4eae8e96e2f3a562db5d"
+
   const [progress, updateProgress] = useState(0)
 
   return (
